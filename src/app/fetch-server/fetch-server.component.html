@@ -3,15 +3,16 @@
         <div class="col-xs-12">
         <div class="col-xs-5">
             <div  > 
-            <a href='#' class="list-group-item clearfix" >
+            <a  class="list-group-item clearfix" >
                 
                 <div class="pull-left" >
                 <h4 class="list-gruop-item-heading"> {{elements.name}} </h4>
-                <p class="list-gruop-item-text">{{elements.status}}</p>
-                <button class="btn btn-danger">Delete</button>
+                <p class="list-gruop-item-text">{{elements.id}}</p>
+                <button class="btn btn-danger" (click)="deletePost()">Delete</button>
+                <button class="btn btn-primary" type="button" (click)="detailView()">Detail View</button>
         </div>
         <span class="pull-right">
-            <p>{{elements.cpu}}</p>        </span>
+            <p>{{elements.status}}</p>        </span>
         
     </a>
 </div>
@@ -21,3 +22,14 @@
 
     </div>
 </div>
+
+<div class="container" *ngIf="!detailsView">
+    <p>Name: {{elements.name}}</p>
+    <p>Memory:{{elements.memory}}</p>
+    <p>CPU: {{elements.cpu}}</p>
+    <p>Status: {{elements.status}}</p>
+    <p>UUID: {{elements.id}}</p>
+    
+    
+</div>
+

@@ -1,15 +1,23 @@
-
-
 <div class="row">
     <div class="col-xs-12">
-        <div class="list list-group clearfix">
-            <p>Server Name : {{serverDetails.name}}</p>            
-            <p>Server Memory : {{serverDetails.memory}}</p>            
-            <p>Server CPU{{serverDetails.cpu}}</p>            
-            <p>Server Status {{serverDetails.status}}</p>            
-            <p>Server ID: {{serverDetails.id}}</p>            
+    <div>
+        <div class="row">
+            <div class="col-sm-5 form-group">
+                <label for="serverName">Name</label>
+                <input type="text" id="serverName" class="form-control"  [(ngModel)]="serverName" >
+                <label for="serverMemory">Memory</label>
+                <input type="text" id="serverMemory" class="form-control" [(ngModel)]="serverMemory">
+                <label for="serverCpu">CPU</label>
+                <input type="text" id="serverCpu" class="form-control" [(ngModel)]="serverCpu">
+                <label for="serverStatus">Status</label>
+                <input type="text" id="serverStatus" class="form-control" [(ngModel)]="serverStatus"> 
+                
+
+            </div>
         </div>
+        <button  class="btn btn-primary" (click)="serverAdded()" >Update Server Details</button>
+        <!-- <p> Name: <input ></p> -->
     </div>
+ 
 </div>
-
-
+</div>

@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { AddServerComponent } from './add-server/add-server.component';
 import { FetchServerComponent } from './fetch-server/fetch-server.component';
 import { ServerDetailsComponent } from './server-details/server-details.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +23,13 @@ import { ServerDetailsComponent } from './server-details/server-details.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
+    
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

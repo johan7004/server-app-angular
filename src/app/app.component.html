@@ -1,8 +1,8 @@
-<app-header>
+<app-header >
 </app-header>
-<app-add-server></app-add-server>
+<app-add-server (addServer)="onServerAdded($event)"></app-add-server>
 <br>
 <hr>
-<app-fetch-server *ngFor="let data of serverDetails" [elements]="data" [serverDetails]="data" ></app-fetch-server>
+<app-fetch-server *ngFor="let data of serverDetails" [elements]="data" [serverDetails]="data"  (delete)="deletePost($event)" ></app-fetch-server>
 <hr>
-<app-server-details *ngFor="let data of serverDetails" [serverDetails]="data"></app-server-details>
+<app-server-details *ngFor="let data of serverDetails" [serverDetails]="data" (updateServer)="updatedServer($event)"></app-server-details>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angularcrud-7428d": {
+      "hosting": {
+        "angularServer": [
+          "angularcrud-7428d"
+        ]
+      }
+    }
+  }
+}
