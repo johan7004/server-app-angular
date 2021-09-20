@@ -8,8 +8,8 @@
                 <div class="pull-left" >
                 <h4 class="list-gruop-item-heading"> {{elements.name}} </h4>
                 <p class="list-gruop-item-text">{{elements.id}}</p>
-                <button class="btn btn-danger" (click)="deletePost()">Delete</button>
-                <button class="btn btn-primary" type="button" (click)="detailView()">Detail View</button>
+                <button class="btn btn-danger" (click)="deletePost()" name="serverDelete">Delete</button>
+                <button class="btn btn-primary" type="button" name="serverDetails-view" (click)="detailView()">Detail View</button>
         </div>
         <span class="pull-right">
             <p>{{elements.status}}</p>        </span>

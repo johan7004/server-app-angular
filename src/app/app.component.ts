@@ -3,6 +3,8 @@ import { ServerData } from './shared/data.model';
 import {HttpClient} from '@angular/common/http'
 import {map} from 'rxjs/operators'
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

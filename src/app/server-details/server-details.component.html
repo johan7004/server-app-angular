@@ -4,18 +4,18 @@
         <div class="row">
             <div class="col-sm-5 form-group">
                 <label for="serverName">Name</label>
-                <input type="text" id="serverName" class="form-control"  [(ngModel)]="serverName" >
+                <input type="text" id="serverName" name="update-name" class="form-control"  [(ngModel)]="serverName" >
                 <label for="serverMemory">Memory</label>
-                <input type="text" id="serverMemory" class="form-control" [(ngModel)]="serverMemory">
+                <input type="text" id="serverMemory" name="update-memory"class="form-control" [(ngModel)]="serverMemory">
                 <label for="serverCpu">CPU</label>
-                <input type="text" id="serverCpu" class="form-control" [(ngModel)]="serverCpu">
+                <input type="text" id="serverCpu" name="update-cpu" class="form-control" [(ngModel)]="serverCpu">
                 <label for="serverStatus">Status</label>
-                <input type="text" id="serverStatus" class="form-control" [(ngModel)]="serverStatus"> 
+                <input type="text" id="serverStatus" name="update-status" class="form-control" [(ngModel)]="serverStatus"> 
                 
 
             </div>
         </div>
-        <button  class="btn btn-primary" (click)="serverAdded()" >Update Server Details</button>
+        <button  name="update-server"class="btn btn-primary" (click)="serverAdded()" >Update Server Details</button>
         <!-- <p> Name: <input ></p> -->
     </div>
  

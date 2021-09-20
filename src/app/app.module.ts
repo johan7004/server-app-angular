@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     AddServerComponent,
     FetchServerComponent,
-    ServerDetailsComponent
+    ServerDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     NgbModule,
+    
     
     
 

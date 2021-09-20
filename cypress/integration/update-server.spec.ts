@@ -5,6 +5,7 @@ describe('CloudSigma Home Page', () => {
 
   const addServerForm = chance.string()
   
+  
 
   it('Visits the initial project page', () => {
     cy.visit('/')
@@ -15,12 +16,13 @@ describe('CloudSigma Home Page', () => {
 
   it('should add server to the db from form', ()=>{
     cy.visit('/')
-    cy.get('input[name=server-name]').type(addServerForm)
-     cy.get('input[name=server-memory]').type(addServerForm)
-    cy.get('input[name=server-cpu]').type(addServerForm)
-    cy.get('input[name=server-status]').type(addServerForm)
+    cy.get('input[name=update-name]').type(addServerForm)
+    .should('have.value', addServerForm)
+     cy.get('input[name=update-memory]').type(addServerForm)
+    cy.get('input[name=update-cpu]').type(addServerForm)
+    cy.get('input[name=update-status]').type(addServerForm)
     cy.wait(500)
-     cy.get('button[name=addServer]' ).click()
+     cy.get('button[name=update-server]' ).click()
   })
 
   
