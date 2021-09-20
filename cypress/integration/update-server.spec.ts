@@ -1,7 +1,7 @@
 import Chance from 'chance';
 const chance = new Chance();
 
-describe('CloudSigma Home Page', () => {
+describe('update Server', () => {
 
   const addServerForm = chance.string()
   
