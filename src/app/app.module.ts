@@ -8,10 +8,11 @@ import { AddServerComponent } from './add-server/add-server.component';
 import { FetchServerComponent } from './fetch-server/fetch-server.component';
 import { ServerDetailsComponent } from './server-details/server-details.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { RouterModule, Routes } from '@angular/router';
+
+
 
 
 
@@ -21,21 +22,17 @@ import { RouterModule, Routes } from '@angular/router';
     HeaderComponent,
     AddServerComponent,
     FetchServerComponent,
-    ServerDetailsComponent,
+    ServerDetailsComponent, // declare the components
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule, //modules used throughout the application
     NgbModule,
-    
-    
-    
-
-  ],
-  providers: [],
+    ],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
